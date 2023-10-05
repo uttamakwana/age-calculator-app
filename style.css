@@ -143,7 +143,14 @@ body {
     gap: 0.5rem;
   }
 
+  .card-arrow {
+    position: relative;
+    margin: 4rem 0;
+  }
   .down-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 1rem;
   }
   .card-answer {

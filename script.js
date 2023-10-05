@@ -28,6 +28,16 @@ function findYear() {
   }
 
   if (day.value && month.value && year.value) {
+    day.classList.remove("active");
+    dayError.classList.remove("active");
+    dayLabel.classList.remove("active");
+    month.classList.remove("active");
+    monthError.classList.remove("active");
+    monthLabel.classList.remove("active");
+    year.classList.remove("active");
+    yearError.classList.remove("active");
+    yearLabel.classList.remove("active");
+
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth() + 1;
