@@ -18,17 +18,38 @@
       <div class="card-input">
         <div class="card-input-date">
           <label for="day" class="day-label">Day</label>
-          <input type="number" name="day" id="day" placeholder="DD" />
+          <input
+            type="number"
+            name="day"
+            id="day"
+            placeholder="DD"
+            min="1"
+            max="31"
+          />
           <span class="error-day">This field is required</span>
         </div>
         <div class="card-input-date">
           <label for="month" class="month-label">month</label>
-          <input type="number" name="month" id="month" placeholder="MM" />
+          <input
+            type="number"
+            name="month"
+            id="month"
+            placeholder="MM"
+            min="1"
+            max="12"
+          />
           <span class="error-month">This field is required</span>
         </div>
         <div class="card-input-date">
           <label for="year" class="year-label">year</label>
-          <input type="number" name="year" id="year" placeholder="YYYY" />
+          <input
+            type="number"
+            name="year"
+            id="year"
+            placeholder="YYYY"
+            min="1"
+            max="2023"
+          />
           <span class="error-year">This field is required</span>
         </div>
       </div>

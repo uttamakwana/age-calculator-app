@@ -64,8 +64,12 @@ body {
   font-size: 1.5rem;
   padding: 1rem;
   min-width: 70px;
-  width: 50%;
+  width: 140px;
   font-family: "P-B";
+}
+
+.card-input-date input:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
 }
 
 .card-input-date span {
@@ -132,7 +136,7 @@ body {
   }
 
   .card {
-    padding: 2rem 0.5rem;
+    padding: 2rem 1.25rem;
   }
 
   .card-input {
