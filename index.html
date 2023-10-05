@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-input">
+        <div class="card-input-date">
+          <label for="day" class="day-label">Day</label>
+          <input type="number" name="day" id="day" placeholder="DD" />
+          <span class="error-day">This field is required</span>
+        </div>
+        <div class="card-input-date">
+          <label for="month" class="month-label">month</label>
+          <input type="number" name="month" id="month" placeholder="MM" />
+          <span class="error-month">This field is required</span>
+        </div>
+        <div class="card-input-date">
+          <label for="year" class="year-label">year</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" />
+          <span class="error-year">This field is required</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <div class="line"></div>
+        <div class="down-arrow" onclick="findYear()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="card-answer">
+        <h1 class="years"><span class="answer-year"> - - </span> years</h1>
+        <h1 class="months"><span class="answer-month"> - - </span> months</h1>
+        <h1 class="days"><span class="answer-days"> - - </span> days</h1>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "P";
+  src: url("assets/fonts/Poppins-Italic.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "P-B";
+  src: url("assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "P-EB";
+  src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.card {
+  width: clamp(250px, 90%, 1300px);
+  border-radius: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 25%;
+}
+
+.card-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-input-date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-input-date label {
+  text-transform: uppercase;
+  font-family: "P-B";
+  width: 150px;
+}
+
+.card-input-date input {
+  border: 1px solid hsl(0, 1%, 44%);
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  min-width: 70px;
+  width: 50%;
+  font-family: "P-B";
+}
+
+.card-input-date span {
+  display: none;
+  color: hsl(0, 100%, 67%);
+  font-family: "P";
+}
+
+.card-input-date input.active {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.card-input-date input.active::placeholder {
+  color: hsl(0, 100%, 67%);
+}
+
+.card-input-date label.active {
+  color: hsl(0, 100%, 67%);
+}
+
+.error-day.active,
+.error-month.active,
+.error-year.active {
+  display: inline;
+}
+
+.card-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.down-arrow {
+  background-color: hsl(259, 100%, 65%);
+  padding: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-answer {
+  font-family: "P-EB";
+  font-size: 2rem;
+}
+
+.card-answer span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (width <= 600px) {
+  .card-input-date label {
+    width: 50px;
+  }
+
+  .card-input-date input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 2rem 0.5rem;
+  }
+
+  .card-input {
+    gap: 0.5rem;
+  }
+
+  .down-arrow {
+    padding: 1rem;
+  }
+  .card-answer {
+    font-size: 1.25rem;
+  }
+}
